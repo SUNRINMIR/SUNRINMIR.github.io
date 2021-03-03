@@ -19,7 +19,11 @@
         
 
         .art{
-            background-color : #F7F7FA;}
+            background-color : #F7F7FA;
+            margin: 0px;
+            
+
+}
         .high{
             
             width: 190px; 
@@ -62,18 +66,12 @@
 
         .outer-div {
     position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
+        width: 100vw;
+        height: 100vh;
         z-index: 13;
         
         opacity: 100%;
 
-    /*
-     * Setting all four values to 0 makes the element as big
-     * as its next relative parent. Usually this is the viewport.
-     */
 }
 
 .outer-div :not(.inner-div) {
@@ -85,7 +83,7 @@
     display: flex;
     
     justify-content: center;
-    height: 1080px;
+    height: 700px;
     opacity: 100%;
 }
     
@@ -96,12 +94,14 @@
 }
 
 
-      
 
     </style>
 
+
+
+
 </head>
-<body class="art">
+<body class="art" style="overflow: visible;" id="pla">
 
 
     <div class="outer-div" id="123" style="display: none;" >
@@ -114,17 +114,16 @@
             right: 0;
             bottom: 0;
             left: 0; 
-            background-color: #191919;">
+            background-color: #191919;
+            width: 100vw;
+            height: 100vh;">
     
             </div>
     
             <div class="inner-div">
-                <div>
-                    <div>
-                        <img src="김윤서_비일상_.png" class="in_img" onclick="AS2()" id="q">
-                    </div>
-
-                </div>
+              
+                <img src="김윤서_비일상_.png" class="in_img" onclick="AS2()" id="q">
+                 
             </div>
         </div>
 
@@ -133,29 +132,15 @@
 
     </div>
 
+
+
     <script>
-        function AS(){
-            var a = document.getElementById(123).style.display ='block'
-            
 
-            
-        }
+        
 
-        function AS2(){
-            var a = document.getElementById(123).style.display ='none'
+      
+        
 
-
-     
-        }
-
-        function GG(){
-
-            var a = document.getElementById(123).style.display ='block'
-
-            var b = document.getElementById("q")
-            b.setAttribute('src', '김혜린_0.jpg')
-                }
-                
     </script>
 
     <div style="display: flex; justify-content: center;">
@@ -182,13 +167,26 @@
 
                     <div class="bottom"></div>
                 </div>
+
+
+                <div>
+                    <div class="high"></div>
+
+                    <div style="display: inline-flex;">
+                        <div class="left"></div>
+                    <img src="마스크 그룹 88.png"class="right" onclick="GG1()">                   
+                    </div>
+
+                    <div class="bottom"></div>
+                </div>
+    
     
                 <div>
                     <div class="high"></div>
 
                     <div style="display: inline-flex;">
                         <div class="left"></div>
-                    <img src="마스크 그룹 87.png"class="right">                   
+                    <img src="마스크 그룹 87.png"class="right" onclick="GG2()">                   
                     </div>
 
                     <div class="bottom"></div>
@@ -199,29 +197,19 @@
 
                     <div style="display: inline-flex;">
                         <div class="left"></div>
-                    <img src="그룹 43.png"class="right">                   
+                    <img src="그룹 43.png"class="right" onclick="GG3()">                   
                     </div>
                     
                     <div class="bottom"></div>
                 </div>
     
+ 
                 <div>
                     <div class="high"></div>
 
                     <div style="display: inline-flex;">
                         <div class="left"></div>
-                    <img src="마스크 그룹 88.png"class="right">                   
-                    </div>
-
-                    <div class="bottom"></div>
-                </div>
-    
-                <div>
-                    <div class="high"></div>
-
-                    <div style="display: inline-flex;">
-                        <div class="left"></div>
-                        <img src="그룹 39.png" class="right">
+                        <img src="그룹 39.png" class="right" onclick="GG4()">
                     </div>
 
                     <div class="bottom"></div>
@@ -243,17 +231,20 @@
 
                     <div class="bottom"></div>
                 </div>
-    
+
+
                 <div>
                     <div class="high"></div>
 
                     <div style="display: inline-flex;">
                         <div class="left"></div>
-                    <img src="그룹 41.png"class="right">                   
+                    <img src="마스크 그룹 89.png"class="right">                   
                     </div>
 
                     <div class="bottom"></div>
                 </div>
+    
+
     
                 <div>
                     <div class="high"></div>
@@ -277,12 +268,14 @@
                     <div class="bottom"></div>
                 </div>
     
+
+
                 <div>
                     <div class="high"></div>
 
                     <div style="display: inline-flex;">
                         <div class="left"></div>
-                    <img src="마스크 그룹 89.png"class="right">                   
+                    <img src="그룹 41.png"class="right">                   
                     </div>
 
                     <div class="bottom"></div>
@@ -316,6 +309,18 @@
 
                     <div class="bottom"></div>
                 </div>
+
+
+                <div>
+                    <div class="high"></div>
+
+                    <div style="display: inline-flex;">
+                        <div class="left"></div>
+                    <img src="마스크 그룹 93.png"class="right">                   
+                    </div>
+                    
+                    <div class="bottom"></div>
+                </div>
     
                 <div>
                     <div class="high"></div>
@@ -339,16 +344,7 @@
                     <div class="bottom"></div>
                 </div>
     
-                <div>
-                    <div class="high"></div>
 
-                    <div style="display: inline-flex;">
-                        <div class="left"></div>
-                    <img src="마스크 그룹 93.png"class="right">                   
-                    </div>
-                    
-                    <div class="bottom"></div>
-                </div>
     
                 <div>
                     <div class="high"></div>
@@ -590,28 +586,19 @@
 
 
             <div class="img">
+
                 <div>
                     <div class="high"></div>
 
                     <div style="display: inline-flex;">
                         <div class="left"></div>
-                    <img src="마스크 그룹 70.png"class="right">                   
+                    <img src="마스크 그룹 110.png"class="right">                   
                     </div>
 
                     <div class="bottom"></div>
                 </div>
-    
-                <div>
-                    <div class="high"></div>
 
-                    <div style="display: inline-flex;">
-                        <div class="left"></div>
-                    <img src="마스크 그룹 113.png"class="right">                   
-                    </div>
 
-                    <div class="bottom"></div>
-                </div>
-    
                 <div>
                     <div class="high"></div>
 
@@ -634,16 +621,7 @@
                     <div class="bottom"></div>
                 </div>
     
-                <div>
-                    <div class="high"></div>
 
-                    <div style="display: inline-flex;">
-                        <div class="left"></div>
-                    <img src="마스크 그룹 110.png"class="right">                   
-                    </div>
-
-                    <div class="bottom"></div>
-                </div>
 
                 <div>
                     <div class="high"></div>
@@ -666,6 +644,31 @@
                     
                     <div class="bottom"></div>
                 </div>
+
+
+                
+                <div>
+                    <div class="high"></div>
+
+                    <div style="display: inline-flex;">
+                        <div class="left"></div>
+                    <img src="마스크 그룹 70.png"class="right">                   
+                    </div>
+
+                    <div class="bottom"></div>
+                </div>
+    
+                <div>
+                    <div class="high"></div>
+
+                    <div style="display: inline-flex;">
+                        <div class="left"></div>
+                    <img src="마스크 그룹 113.png"class="right">                   
+                    </div>
+
+                    <div class="bottom"></div>
+                </div>
+    
     
                
             </div>
@@ -733,6 +736,29 @@
 
 
             <div class="img">
+
+                <div>
+                    <div class="high"></div>
+
+                    <div style="display: inline-flex;">
+                        <div class="left"></div>
+                    <img src="마스크 그룹 85.png"class="right">                   
+                    </div>
+
+                    <div class="bottom"></div>
+                </div>
+
+                <div>
+                    <div class="high"></div>
+
+                    <div style="display: inline-flex;">
+                        <div class="left"></div>
+                    <img src="마스크 그룹 84.png"class="right">                   
+                    </div>
+
+                    <div class="bottom"></div>
+                </div>
+
                 <div>
                     <div class="high"></div>
 
@@ -777,28 +803,7 @@
                     <div class="bottom"></div>
                 </div>
     
-                <div>
-                    <div class="high"></div>
-
-                    <div style="display: inline-flex;">
-                        <div class="left"></div>
-                    <img src="마스크 그룹 85.png"class="right">                   
-                    </div>
-
-                    <div class="bottom"></div>
-                </div>
-
-                <div>
-                    <div class="high"></div>
-
-                    <div style="display: inline-flex;">
-                        <div class="left"></div>
-                    <img src="마스크 그룹 84.png"class="right">                   
-                    </div>
-
-                    <div class="bottom"></div>
-                </div>
-
+    
           
                
             </div>
